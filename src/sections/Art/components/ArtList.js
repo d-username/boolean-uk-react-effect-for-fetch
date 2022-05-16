@@ -5,7 +5,7 @@ export default function ArtList({ artData }) {
     <div className="scroll-container">
       <ul className="art-list">
         {artData.map((item, index) => {
-          return <ArtListItem item={item} index={index} />;
+          return <ArtListItem item={item} key={index} />;
         })}
       </ul>
     </div>

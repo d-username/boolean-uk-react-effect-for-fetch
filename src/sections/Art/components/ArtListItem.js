@@ -14,7 +14,7 @@ export default function ArtListitem({ item }) {
       <h4>Artistic Subjects:</h4>
       <ul className="subject-list">
         {item.subject_titles.map((title, index) => {
-          return <SubjectList title={title} index={index} />;
+          return <SubjectList title={title} key={index} />;
         })}
       </ul>
     </li>
